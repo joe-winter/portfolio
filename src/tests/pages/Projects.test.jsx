@@ -3,8 +3,8 @@ import { describe, expect, it } from "vitest";
 import Projects from "../../pages/Projects"
 
 
-describe("Contact", () => {
-  it("has heading lets get in touch", () => {
+describe("Projects", () => {
+  it("has heading projects", () => {
     render(<Projects/>)
 
     const headingEl = screen.getByRole('heading')
