@@ -58,7 +58,7 @@ export default function NavBar({ theme, toggleTheme }) {
               </a>
             </li>
             <li>
-              <button onClick={toggleTheme()}>
+              <button onClick={toggleTheme && toggleTheme()}>
                 {!theme && (
                   <svg
                     className="w-6 h-6 text-gray-800 dark:text-white"
