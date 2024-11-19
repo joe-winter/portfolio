@@ -22,15 +22,15 @@ function App() {
     },
     {
       path: "/about",
-      element: <About />,
+      element: <About theme={theme} toggleTheme={() => toggleTheme}/>,
     },
     {
       path: "/projects",
-      element: <Projects />,
+      element: <Projects theme={theme} toggleTheme={() => toggleTheme}/>,
     },
     {
       path: "/contact",
-      element: <Contact />,
+      element: <Contact theme={theme} toggleTheme={() => toggleTheme}/>,
     },
   ]);
 
