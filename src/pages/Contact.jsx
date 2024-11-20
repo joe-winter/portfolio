@@ -1,9 +1,9 @@
 import NavBar from "../Components/NavBar";
 
-export default function Contact({theme, toggleTheme}) {
+export default function Contact() {
   return (
     <>
-    <NavBar theme={theme} toggleTheme={toggleTheme}/>
+    <NavBar />
     <h4>Let&apos;s Get In Touch!</h4>
     </>
   )

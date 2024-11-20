@@ -1,9 +1,9 @@
 import NavBar from "../Components/NavBar";
 
-export default function About({theme, toggleTheme}) {
+export default function About() {
   return (
     <>
-    <NavBar theme={theme} toggleTheme={toggleTheme}/>
+    <NavBar />
     <h4>About Me</h4>
     </>
   )

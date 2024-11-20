@@ -1,9 +1,9 @@
 import NavBar from "../Components/NavBar";
 
-export default function Projects({theme, toggleTheme}) {
+export default function Projects() {
   return (
     <>
-    <NavBar theme={theme} toggleTheme={toggleTheme}/>
+    <NavBar />
     <h4>Projects</h4>
     </>
   )
