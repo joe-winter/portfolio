@@ -1,10 +1,10 @@
-import { createContext, useContext, useEffect, useState } from "react";
+import { createContext, useEffect, useState } from "react";
 
-const ThemeContext = createContext(null);
+export const ThemeContext = createContext();
 
-export const useTheme = () => {
-  return useContext(ThemeContext)
-}
+// export const useTheme = () => {
+//   return useContext(ThemeContext)
+// }
 
 export const ThemeProvider = ({children}) => {
   const [darkMode, setDarkMode] = useState(true)
@@ -14,11 +14,14 @@ export const ThemeProvider = ({children}) => {
   }
 
   useEffect(() => {
-    const root = window.document.documentElement;
+    document.documentElement.classList.toggle(
+      'dark',
+      localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
+    )
     if (darkMode) {
-      root.classList.add("dark");
+      localStorage.theme = 'dark'
     } else {
-      root.classList.remove("dark");
+      localStorage.theme = 'light'
     }
   }, [darkMode]);
 

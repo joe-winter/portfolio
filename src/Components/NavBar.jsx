@@ -1,8 +1,9 @@
-import { useTheme } from "../context/themeProvider";
+import { useContext } from "react";
+import { ThemeContext } from "../context/themeProvider";
 import ThemeIcon from "./ThemeIcon";
 
 export default function NavBar(){
-  const { toggleTheme, darkMode} = useTheme();
+  const { toggleTheme, darkMode} = useContext(ThemeContext)
   return (
     <nav className="bg-white border-gray-200 dark:bg-gray-900">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
