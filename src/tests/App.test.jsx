@@ -12,6 +12,6 @@ describe("App", () => {
   it("renders the App component and prints to terminal", () => {
     render(<App />);
 
-    screen.debug();
+    // screen.debug();
   });
 });
