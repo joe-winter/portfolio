@@ -1,17 +1,22 @@
 import { useContext } from "react";
 import { ThemeContext } from "../context/themeProvider";
 import ThemeIcon from "./ThemeIcon";
+import { useNavigate } from "react-router-dom";
 
-export default function NavBar(){
-  const { toggleTheme, darkMode} = useContext(ThemeContext)
+export default function NavBar() {
+  const navigate = useNavigate();
+
+  const { toggleTheme, darkMode } = useContext(ThemeContext);
   return (
     <nav className="bg-white border-gray-200 dark:bg-gray-900">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
-          <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-            Joe Winter
-          </span>
-        </a>
+        <button onClick={() => navigate("/")}>
+          <div className="flex items-center space-x-3 rtl:space-x-reverse">
+            <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+              Joe Winter
+            </span>
+          </div>
+        </button>
         <button
           data-collapse-toggle="navbar-default"
           type="button"
@@ -39,32 +44,29 @@ export default function NavBar(){
         <div className="hidden w-full md:block md:w-auto" id="navbar-default">
           <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
             <li>
-              <a
-                href="/about"
-                className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-              >
-                About
-              </a>
+              <button onClick={() => navigate("/about")}>
+                <div className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
+                  About
+                </div>
+              </button>
             </li>
             <li>
-              <a
-                href="/projects"
-                className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-              >
-                Projects
-              </a>
+              <button onClick={() => navigate("/projects")}>
+                <div className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
+                  Projects
+                </div>
+              </button>
             </li>
             <li>
-              <a
-                href="/contact"
-                className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-              >
-                Contact
-              </a>
+              <button onClick={() => navigate("/contact")}>
+                <div className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
+                  Contact
+                </div>
+              </button>
             </li>
             <li>
               <button onClick={toggleTheme}>
-                <ThemeIcon darkMode={darkMode}/>
+                <ThemeIcon darkMode={darkMode} />
               </button>
             </li>
           </ul>

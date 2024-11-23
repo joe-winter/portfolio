@@ -12,13 +12,7 @@ export const ThemeProvider = ({children}) => {
   useEffect(() => {
     document.documentElement.classList.toggle(
       'dark',
-      localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
     )
-    if (darkMode) {
-      localStorage.theme = 'dark'
-    } else {
-      localStorage.theme = 'light'
-    }
   }, [darkMode]);
 
   return (

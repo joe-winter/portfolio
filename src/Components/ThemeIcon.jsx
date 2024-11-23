@@ -1,7 +1,7 @@
 export default function ThemeIcon({ darkMode }) {
   return (
     <>
-      {localStorage.theme === 'dark' && (
+      {darkMode && (
         <svg
           className="w-6 h-6 text-gray-800 dark:text-white"
           aria-hidden="true"
@@ -20,7 +20,7 @@ export default function ThemeIcon({ darkMode }) {
           />
         </svg>
       )}
-      {localStorage.theme === 'light' && (
+      {!darkMode && (
         <svg
           className="w-6 h-6 text-gray-800 dark:text-white"
           aria-hidden="true"
