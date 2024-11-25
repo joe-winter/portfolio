@@ -5,7 +5,7 @@ import ThemeToggle from "./ThemeToggle";
 export default function NavBar() {
   const navigate = useNavigate();
   return (
-    <nav className="bg-white border-gray-200 dark:bg-gray-900">
+    <nav className="bg-white border-gray-200 dark:bg-gray-900 shadow-lg">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <button onClick={() => navigate("/")}>
           <div className="flex items-center space-x-3 rtl:space-x-reverse">
