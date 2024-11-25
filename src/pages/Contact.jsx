@@ -14,8 +14,10 @@ export default function Contact() {
   return (
     <>
       <h4>Let&apos;s Get In Touch!</h4>
-      <p>Feel free to download my CV</p>
-      <button onClick={onDownloadClick}>Download</button>
+      <div>
+        <span>Feel free to download my CV </span>
+        <button onClick={onDownloadClick}>Download</button>
+      </div>
     </>
   );
 }
