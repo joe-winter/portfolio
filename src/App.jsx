@@ -37,7 +37,7 @@ function App() {
       path: "/contact",
       element: (
         <>
-          <NavBar /> <Projects />
+          <NavBar /> <Contact />
         </>
       ),
     },
