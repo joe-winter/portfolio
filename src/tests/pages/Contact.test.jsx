@@ -11,4 +11,12 @@ describe("Contact", () => {
 
     expect(headingEl).toHaveTextContent("Let's Get In Touch!")
   })
+
+  it("has link text to download cv", () => {
+    render(<Contact />)
+
+    const textEl = screen.getByText("Feel free to download my CV")
+
+    expect(textEl).toBeInTheDocument()
+  })
 })
