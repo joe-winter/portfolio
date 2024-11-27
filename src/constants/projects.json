@@ -1,0 +1,10 @@
+[
+  {
+    "id": 1,
+    "name": "MakersUIGame",
+    "description": "A multiplayer number guessing game with lobbies, round timers, andreal-time updates, built using Node.js, React, and Socket.IO, anddeployed via Render with CI/CD using GitHub Actions.",
+    "githubLink": "https://github.com/shammy642/MakersUIGame",
+    "deployedLink": "",
+    "technologies": ["React", "Node.js", "Socket.IO", "Render"]
+  }
+]
