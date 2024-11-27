@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { ThemeContext } from "../context/themeProvider";
-import ThemeIcon from "./ThemeIcon";
+import ThemeIcon from "./Icons/ThemeIcon";
 
 const ThemeToggle = () => {
   const { toggleTheme, darkMode } = useContext(ThemeContext);

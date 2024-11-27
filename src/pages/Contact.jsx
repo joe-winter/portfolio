@@ -1,5 +1,5 @@
 import { useState } from "react";
-import DownloadIcon from "../Components/DownloadIcon";
+import DownloadIcon from "../Components/Icons/DownloadIcon";
 
 export default function Contact() {
   const [isDownloaded, setIsDownloaded] = useState(false);

@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 import PageLink from "./PageLink";
 import ThemeToggle from "./ThemeToggle";
 import ExternalLinkButton from "./ExternalLinkButton";
-import GitHubIcon from "./GitHubIcon";
+import GitHubIcon from "./Icons/GitHubIcon";
 
 export default function NavBar() {
   const navigate = useNavigate();
