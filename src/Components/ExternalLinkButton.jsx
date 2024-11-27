@@ -1,12 +1,12 @@
-
-const ExternalLinkButton = ({url, content}) => {
+const ExternalLinkButton = ({ url, content }) => {
+  const onClick = (url) => {
+    window.open(url);
+  };
   return (
     <div>
-      <button onClick={window.open(url)}>
-        {content}
-      </button>
+      <button onClick={() => onClick(url)}>{content}</button>
     </div>
-  )
-}
+  );
+};
 
-export default ExternalLinkButton
+export default ExternalLinkButton;

@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import PageLink from "./PageLink";
 import ThemeToggle from "./ThemeToggle";
+import ExternalLinkButton from "./ExternalLinkButton";
 
 export default function NavBar() {
   const navigate = useNavigate();
@@ -26,7 +27,7 @@ export default function NavBar() {
               <PageLink path={"/contact"} text={"Contact"} />
             </li>
             <li>
-              
+              <ExternalLinkButton url={"https://github.com/joe-winter"} content={"GitHub"}/>
             </li>
             <li>
               <ThemeToggle />
