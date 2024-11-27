@@ -11,4 +11,11 @@ describe("Home", () => {
 
     expect(headingEl).toHaveTextContent("Hi there, I'm Joe Winter")
   })
+  it("has text", () => {
+    render(<Home/>)
+
+    const textEl = screen.getByText('Have a look at my projects or contact me.')
+
+    expect(textEl).toBeInTheDocument()
+  })
 })
