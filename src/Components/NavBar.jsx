@@ -26,6 +26,9 @@ export default function NavBar() {
               <PageLink path={"/contact"} text={"Contact"} />
             </li>
             <li>
+              
+            </li>
+            <li>
               <ThemeToggle />
             </li>
           </ul>
