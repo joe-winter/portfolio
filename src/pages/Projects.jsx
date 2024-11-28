@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import ProjectCard from "../Components/ProjectCard";
+import { ReactIcon, SocketIoIcon } from "../Components/Icons/TechIcons";
 
 export default function Projects() {
   const [projects, setProjects] = useState([]);
@@ -25,6 +26,8 @@ export default function Projects() {
             title={project.title}
             description={project.description}
             github={project.github}
+            link={project.link}
+            technologies={[<ReactIcon key={1}/>]}
           />
         ))}
     </div>
