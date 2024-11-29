@@ -4,7 +4,7 @@
     "title": "MakersUIGame",
     "description": "A multiplayer number guessing game with lobbies, round timers, real-time updates and deployed via Render with CI/CD using GitHub Actions.",
     "github": "https://github.com/shammy642/MakersUIGame",
-    "link": "example.com",
+    "link": "https://example.com/",
     "technologies": ["React", "Node.js", "Socket.IO", "Render"]
   }
 ]

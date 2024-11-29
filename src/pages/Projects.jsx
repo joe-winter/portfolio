@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import ProjectCard from "../Components/ProjectCard";
-import { ReactIcon, SocketIoIcon } from "../Components/Icons/TechIcons";
+import { NodeIcon, ReactIcon, SocketIoIcon } from "../Components/Icons/TechIcons";
 
 export default function Projects() {
   const [projects, setProjects] = useState([]);
@@ -15,7 +15,7 @@ export default function Projects() {
   console.log("Projects", projects);
 
   return (
-    <div className="flex-auto justify-center p-96">
+    <div className="flex-auto justify-center p-32 mx-32">
       <h4 className="text-black dark:text-white text-3xl font-bold p-10">
         Projects
       </h4>
@@ -27,7 +27,7 @@ export default function Projects() {
             description={project.description}
             github={project.github}
             link={project.link}
-            technologies={[<ReactIcon key={1}/>]}
+            technologies={[<ReactIcon key={1}/>, <SocketIoIcon key={2}/>, <NodeIcon key={3}/>]}
           />
         ))}
     </div>
