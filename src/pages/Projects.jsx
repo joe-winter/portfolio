@@ -9,7 +9,7 @@ export default function Projects() {
       <h4 className="text-black dark:text-white text-3xl font-bold p-10">
         Projects
       </h4>
-      <div className="flex">
+      <div className="grid grid-cols-3">
         {projects &&
           projects.map((project) => (
             <ProjectCard
