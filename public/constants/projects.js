@@ -18,7 +18,7 @@ const projects = [
     images: "/public/images/MakersUIGame/host-landing.png",
   },
   {
-    id: 1,
+    id: 2,
     title: 'Acebook',
     description: 
       "A Facebook clone with React, Node.js, Express and MongoDB, featuring authentication, dynamic posts, profiles, friends, likes and messages",
@@ -35,7 +35,21 @@ const projects = [
 
     ],
     images: "/public/images/Acebook/home-page.png"
-  }
+  },
+  {
+    id: 2,
+    title: 'Battleships',
+    description: 
+      "A Facebook clone with React, Node.js, Express and MongoDB, featuring authentication, dynamic posts, profiles, friends, likes and messages",
+    github: "https://github.com/joe-winter/battleships",
+    // link: "https://example.com/",
+    technologies: [
+      "/public/icons/python.svg",
+      "/public/icons/pytest.svg",
+      "/public/icons/vite.svg",
+    ],
+    images: "/public/images/Battleships/battleships.png"
+  },
 ];
 
 export default projects;

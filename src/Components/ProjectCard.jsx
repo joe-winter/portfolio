@@ -25,7 +25,7 @@ const ProjectCard = ({
         <div className="p-2">
           <div className="w-full relative mx-auto h-auto overflow-hidden rounded-lg">
             <img
-              className="w-full h-auto relative z-0 rounded-lg transition-all duration-300 hover:scale-110"
+              className="w-full h-96 object-cover relative z-0 rounded-lg transition-all duration-300 hover:scale-110"
               src={images}
               alt="host landing page"
             />
