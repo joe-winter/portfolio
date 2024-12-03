@@ -21,7 +21,7 @@ const projects = [
     id: 2,
     title: 'Acebook',
     description: 
-      "A Facebook clone with React, Node.js, Express and MongoDB, featuring authentication, dynamic posts, profiles, friends, likes and messages",
+      "A Facebook clone with React, Node.js, Express and MongoDB, featuring authentication, dynamic posts, profiles, friends, likes and messages.",
     github: "https://github.com/Alexia-May/acebook-watermelon-club",
     link: "https://example.com/",
     technologies: [
@@ -40,13 +40,12 @@ const projects = [
     id: 2,
     title: 'Battleships',
     description: 
-      "A Facebook clone with React, Node.js, Express and MongoDB, featuring authentication, dynamic posts, profiles, friends, likes and messages",
+      "A Battleship game implemented in Python with PyTest for unit testing, featuring ship placement, turn-based gameplay, and hit/miss mechanics.",
     github: "https://github.com/joe-winter/battleships",
     // link: "https://example.com/",
     technologies: [
       "/public/icons/python.svg",
       "/public/icons/pytest.svg",
-      "/public/icons/vite.svg",
     ],
     images: "/public/images/Battleships/battleships.png"
   },
