@@ -7,8 +7,8 @@ describe("Projects", () => {
   it("has heading projects", () => {
     render(<Projects/>)
 
-    const headingEl = screen.getByRole('heading')
+    const headingEl = screen.getByRole('heading', {name: "Projects"})
 
-    expect(headingEl).toHaveTextContent("Projects")
+    expect(headingEl).toBeInTheDocument()
   })
 })

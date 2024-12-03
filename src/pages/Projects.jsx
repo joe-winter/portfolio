@@ -1,5 +1,4 @@
 import ProjectCard from "../Components/ProjectCard";
-import { NodeIcon, ReactIcon, SocketIoIcon } from "../Components/Icons/TechIcons";
 import projects from "../../public/constants/projects";
 
 export default function Projects() {
