@@ -23,9 +23,9 @@ const ProjectCard = ({
           {link && <ExternalLinkButton url={link} content={<LinkIcon />} />}
         </div>
         <div className="p-2">
-          <div className="w-full relative mx-auto h-auto overflow-hidden rounded-lg">
+          <div className="w-full relative mx-auto h-auto overflow-hidden rounded-lg border-2 border-gray-600">
             <img
-              className="w-full h-96 object-cover relative z-0 rounded-lg transition-all duration-300 hover:scale-110"
+              className="w-full h-72  object-cover relative z-0 rounded-lg transition-all duration-300 hover:scale-110"
               src={images}
               alt="host landing page"
             />
