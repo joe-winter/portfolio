@@ -19,7 +19,7 @@ export default function Projects() {
             github={project.github}
             link={project.link}
             technologies={project.technologies}
-            image={project.image}
+            images={project.images}
           />
         ))}
     </div>

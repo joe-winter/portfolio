@@ -12,9 +12,10 @@ const projects = [
       "/public/icons/socketio.svg",
       "/public/icons/jest.svg",
       "/public/icons/playwright.svg",
-      "/public/icons/tailwind.svg"
+      "/public/icons/tailwind.svg",
+      "/public/icons/vite.svg"
     ],
-    image: "/public/images/MakersUIGame/host-landing.png",
+    images: "/public/images/MakersUIGame/host-landing.png",
   },
 ];
 
