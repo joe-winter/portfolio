@@ -1,16 +1,8 @@
-import { useEffect, useState } from "react";
 import ProjectCard from "../Components/ProjectCard";
 import { NodeIcon, ReactIcon, SocketIoIcon } from "../Components/Icons/TechIcons";
+import projects from "../../public/constants/projects";
 
 export default function Projects() {
-  const [projects, setProjects] = useState([]);
-
-  useEffect(() => {
-    fetch("/public/constants/projects.json")
-      .then((res) => res.json())
-      .then((data) => setProjects(data))
-      .catch((e) => console.log("Error fecthing projects", e));
-  }, []);
 
   console.log("Projects", projects);
 
@@ -27,7 +19,8 @@ export default function Projects() {
             description={project.description}
             github={project.github}
             link={project.link}
-            technologies={[<ReactIcon key={1}/>, <SocketIoIcon key={2}/>, <NodeIcon key={3}/>]}
+            technologies={project.technologies}
+            image={project.image}
           />
         ))}
     </div>
