@@ -5,7 +5,6 @@ import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import { ThemeProvider } from "./context/themeProvider";
 import NavBar from "./Components/NavBar";
-import NavBarScroll from "./Components/NavBarScroll";
 import { useRef } from "react";
 function App() {
   const projectsRef = useRef(null);
@@ -19,7 +18,7 @@ function App() {
 
   return (
     <ThemeProvider>
-      <NavBarScroll
+      <NavBar
         scrollToProjects={() => scrolltoRef(projectsRef)}
         scrollToAbout={() => scrolltoRef(aboutRef)}
         scrollToHome={() => scrolltoRef(homeRef)}

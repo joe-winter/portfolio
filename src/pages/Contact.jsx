@@ -21,9 +21,9 @@ export default function Contact() {
   };
   return (
     <div className="flex: justify-center p-96">
-      <h4 className="text-black dark:text-white">Let&apos;s Get In Touch!</h4>
+      <h4 className="text-black dark:text-white text-3xl">Let&apos;s Get In Touch!</h4>
       <div className="flex items-center justify-center space-x-1">
-        <span className="text-black dark:text-white">Feel free to download my CV </span>
+        <span className=" text-2xl text-black dark:text-white">Feel free to download my CV </span>
         <button onClick={onDownloadClick}>
           <DownloadIcon downloaded={isDownloaded} />
         </button>
