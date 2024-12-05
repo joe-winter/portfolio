@@ -5,7 +5,7 @@ import GitHubIcon from "./Icons/GitHubIcon";
 
 export default function NavBarScroll({ scrollToProjects, scrollToHome, scrollToAbout, scrollToContact }) {
   return (
-    <nav className="bg-white border-gray-200 dark:bg-gray-900 shadow-lg">
+    <nav className="bg-white border-gray-200 dark:bg-gray-900 shadow-lg fixed w-full top-0">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <button onClick={scrollToHome}>
           <div className="flex items-center space-x-3 rtl:space-x-reverse">

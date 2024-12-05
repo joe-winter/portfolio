@@ -21,9 +21,9 @@ function App() {
     <ThemeProvider>
       <NavBarScroll
         scrollToProjects={() => scrolltoRef(projectsRef)}
-        scrollToAbout={() => scrolltoRef(projectsRef)}
-        scrollToHome={() => scrolltoRef(projectsRef)}
-        scrollToContact={() => scrolltoRef(projectsRef)}
+        scrollToAbout={() => scrolltoRef(aboutRef)}
+        scrollToHome={() => scrolltoRef(homeRef)}
+        scrollToContact={() => scrolltoRef(contactRef)}
       />
       <section ref={homeRef}>
         <Home />
