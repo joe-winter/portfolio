@@ -10,20 +10,29 @@ import NavBarScroll from "./Components/NavBarScroll";
 import { useRef } from "react";
 function App() {
   const projectsRef = useRef(null);
+  const homeRef = useRef(null);
+  const aboutRef = useRef(null);
+  const contactRef = useRef(null);
 
   const scrolltoRef = (ref) => {
-    ref.current.scrollIntoView({ behavior: 'smooth'});
+    ref.current.scrollIntoView({ behavior: "smooth" });
   };
-  
+
   return (
     <ThemeProvider>
-        <NavBarScroll scrollToProjects={() => scrolltoRef(projectsRef)} />
-      <Home />
-      <About />
-        <section ref={projectsRef}>
-      <Projects/>
-        </section>
-      <Contact />
+      <NavBarScroll scrollToProjects={() => scrolltoRef(projectsRef)} />
+      <section ref={homeRef}>
+        <Home />
+      </section>
+      <section ref={aboutRef}>
+        <About />
+      </section>
+      <section ref={projectsRef}>
+        <Projects />
+      </section>
+      <section ref={contactRef}>
+        <Contact />
+      </section>
     </ThemeProvider>
   );
 }
