@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 
 export default function Home() {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   return (
     <div className="flex flex-col-reverse lg:flex-row items-center justify-between min-h-screen bg-gray-100 dark:bg-gray-900 px-8 lg:px-24">
@@ -16,13 +16,13 @@ export default function Home() {
         </p>
         <div className="flex justify-center lg:justify-start gap-4">
           <button
-            onClick={() => navigate("/projects")}
+            // onClick={() => navigate("/projects")}
             className="bg-gray-800 hover:bg-gray-700 text-white font-medium py-2 px-4 rounded transition"
           >
             Projects
           </button>
           <button
-            onClick={() => navigate("/contact")}
+            // onClick={() => navigate("/contact")}
             className="bg-gray-800 hover:bg-gray-700 text-white font-medium py-2 px-4 rounded transition"
           >
             Contact Me
