@@ -2,7 +2,6 @@ import ProjectCard from "../Components/ProjectCard";
 import projects from "../../public/constants/projects";
 
 export default function Projects() {
-  console.log("Projects", projects);
 
   return (
     <div className="flex-auto justify-center p-32 mx-32">
