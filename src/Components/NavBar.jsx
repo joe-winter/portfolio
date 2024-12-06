@@ -26,7 +26,7 @@ export default function NavBar({
   return (
     <>
       {!isMobile && (
-        <nav className="bg-gray-50s border-gray-200 dark:bg-gray-900 shadow-lg fixed w-full top-0 z-50">
+        <nav className="bg-gray-50 border-gray-200 dark:bg-gray-900 shadow-lg fixed w-full top-0 z-50">
           <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <button onClick={scrollToHome}>
               <div className="flex items-center space-x-reverse">
@@ -36,7 +36,7 @@ export default function NavBar({
               </div>
             </button>
             <div className="block w-auto">
-              <ul className="font-medium flex p-0 flex-row space-x-8 mt-0 bg-white dark:bg-gray-900 dark:border-gray-700">
+              <ul className="font-medium flex p-0 flex-row space-x-8 mt-0 bg-gray-50 dark:bg-gray-900 dark:border-gray-700">
                 <li>
                   <button onClick={scrollToAbout}>
                     <div className="text-gray-900 hover:text-blue-700 dark:text-white dark:hover:text-blue-500 dark:hover:bg-transparent">
@@ -73,7 +73,7 @@ export default function NavBar({
         </nav>
       )}
       {isMobile && (
-        <nav className="bg-gray-50s border-gray-200 dark:bg-gray-900 shadow-lg fixed w-full top-0 z-50">
+        <nav className="bg-gray-50 border-gray-200 dark:bg-gray-900 shadow-lg fixed w-full top-0 z-50">
           <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <button onClick={scrollToHome}>
               <div className="flex items-center space-x-3 rtl:space-x-reverse">
@@ -82,7 +82,7 @@ export default function NavBar({
                 </span>
               </div>
             </button>
-            <ul className="font-medium flex p-0 flex-row space-x-8 mt-0 bg-white dark:bg-gray-900 dark:border-gray-700 items-center">
+            <ul className="font-medium flex p-0 flex-row space-x-8 mt-0 bg-gray-50 dark:bg-gray-900 dark:border-gray-700 items-center">
               <li>
                 <ExternalLinkButton
                   url={"https://github.com/joe-winter"}
