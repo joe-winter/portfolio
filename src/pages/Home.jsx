@@ -1,7 +1,7 @@
 export default function Home({scrollToProjects, scrollToContact}) {
 
   return (
-    <div className="flex flex-col lg:flex-row items-center content-center mt-48 lg:mt-96 justify-center">
+    <div className="flex flex-col lg:flex-row items-center content-center mt-24 lg:mt-96 justify-center">
       <div className="text-center lg:text-left max-w-2xl">
         <h1 className="text-4xl font-bold text-black dark:text-white mb-4">
           Hi there, I&apos;m Joe Winter
