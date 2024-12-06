@@ -4,11 +4,11 @@ import projects from "../projects";
 export default function Projects() {
 
   return (
-    <div className="flex flex-col justify-center items-center mt-48">
+    <div className="flex flex-col justify-center items-center mt-48 lg:mt-96">
       <h4 className="text-black dark:text-white text-3xl font-bold">
         Projects
       </h4>
-      <div className="grid grid-cols-1 mt-12">
+      <div className="grid grid-cols-1 lg:grid-cols-3 mt-12">
         {projects &&
           projects.map((project) => (
             <ProjectCard
