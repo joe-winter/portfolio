@@ -1,3 +1,5 @@
+import portrait from '../assets/images/portrait.png'
+
 export default function Home({scrollToProjects, scrollToContact}) {
 
   return (
@@ -29,7 +31,7 @@ export default function Home({scrollToProjects, scrollToContact}) {
 
       <div className="mb-8 lg:mb-0 lg:ml-12">
         <img
-          src={`${import.meta.env.BASE_URL}images/portrait.png`}
+          src={portrait}
           alt="Joe Winter Portrait"
           className="max-w-xs lg:max-w-md rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300"
         />

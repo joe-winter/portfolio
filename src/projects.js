@@ -1,3 +1,21 @@
+import makersUiGame from './assets/images/MakersUIGame/host-landing.png';
+import acebook from './assets/images/Acebook/home-page.png';
+import battleships from './assets/images/Battleships/battleships.png';
+
+import reactIcon from './assets/icons/react.svg';
+import nodeIcon from './assets/icons/node.svg';
+import socketioIcon from './assets/icons/socketio.svg';
+import jestIcon from './assets/icons/jest.svg';
+import playwrightIcon from './assets/icons/playwright.svg';
+import tailwindIcon from './assets/icons/tailwind.svg';
+import viteIcon from './assets/icons/vite.svg';
+import jwtIcon from './assets/icons/jwt.svg';
+import expressIcon from './assets/icons/express.svg';
+import mongodbIcon from './assets/icons/mongodb.svg';
+import vitestIcon from './assets/icons/vitest.svg';
+import pythonIcon from './assets/icons/python.svg';
+import pytestIcon from './assets/icons/pytest.svg';
+
 const projects = [
   {
     id: 1,
@@ -7,15 +25,15 @@ const projects = [
     github: "https://github.com/shammy642/MakersUIGame",
     link: "https://example.com/",
     technologies: [
-      "/icons/react.svg",
-      "/icons/node.svg",
-      "/icons/socketio.svg",
-      "/icons/jest.svg",
-      "/icons/playwright.svg",
-      "/icons/tailwind.svg",
-      "/icons/vite.svg",
+      reactIcon,
+      nodeIcon,
+      socketioIcon,
+      jestIcon,
+      playwrightIcon,
+      tailwindIcon,
+      viteIcon,
     ],
-    images: "/images/MakersUIGame/host-landing.png",
+    images: makersUiGame,
   },
   {
     id: 2,
@@ -25,15 +43,15 @@ const projects = [
     github: "https://github.com/Alexia-May/acebook-watermelon-club",
     link: "https://example.com/",
     technologies: [
-      "/icons/react.svg",
-      "/icons/node.svg",
-      "/icons/jwt.svg",
-      "/icons/express.svg",
-      "/icons/mongodb.svg",
-      "/icons/vitest.svg",
-      "/icons/vite.svg",
+      reactIcon,
+      nodeIcon,
+      jwtIcon,
+      expressIcon,
+      mongodbIcon,
+      vitestIcon,
+      viteIcon,
     ],
-    images: "/images/Acebook/home-page.png",
+    images: acebook,
   },
   {
     id: 3,
@@ -41,9 +59,8 @@ const projects = [
     description:
       "A Battleship game implemented in Python with PyTest for unit testing, featuring ship placement, turn-based gameplay, and hit/miss mechanics.",
     github: "https://github.com/joe-winter/battleships",
-    // link: "https://example.com/",
-    technologies: ["/icons/python.svg", "/icons/pytest.svg"],
-    images: "/images/Battleships/battleships.png",
+    technologies: [pythonIcon, pytestIcon],
+    images: battleships,
   },
 ];
 
