@@ -33,7 +33,7 @@ const projects = [
       tailwindIcon,
       viteIcon,
     ],
-    images: `${import.meta.env.BASE_URL}assets/images/MakersUIGame/host-landing.png`,
+    images: `${import.meta.env.BASE_URL}src/assets/images/MakersUIGame/host-landing.png`,
   },
   {
     id: 2,
