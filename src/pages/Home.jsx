@@ -1,7 +1,7 @@
 export default function Home({scrollToProjects, scrollToContact}) {
 
   return (
-    <div className="flex flex-col-reverse lg:flex-row items-center justify-between min-h-screen px-8 lg:px-24">
+    <div className="flex flex-col lg:flex-row items-center content-center mt-24">
       <div className="text-center lg:text-left max-w-2xl">
         <h1 className="text-4xl font-bold text-black dark:text-white mb-4">
           Hi there, I&apos;m Joe Winter
@@ -27,11 +27,11 @@ export default function Home({scrollToProjects, scrollToContact}) {
         </div>
       </div>
 
-      <div className="mb-8 lg:mb-0 lg:ml-12">
+      <div className="my-24">
         <img
           src="images/portrait.png"
           alt="Joe Winter Portrait"
-          className="max-w-xs lg:max-w-md rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300"
+          className="max-w-96 rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300"
         />
       </div>
     </div>

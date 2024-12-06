@@ -11,7 +11,7 @@ const ProjectCard = ({
   images,
 }) => {
   return (
-    <div className="p-4 transform transition-transform duration-300">
+    <div className="transform transition-transform duration-300">
       <div className="block max-w-sm p-6 min-h-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
         <div className="flex items-center justify-center space-x-4">
           <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">

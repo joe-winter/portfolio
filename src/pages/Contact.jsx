@@ -20,7 +20,7 @@ export default function Contact() {
     }
   };
   return (
-    <div className="flex: justify-center p-96">
+    <div className="flex: justify-center">
       <h4 className="text-black dark:text-white text-3xl">Let&apos;s Get In Touch!</h4>
       <div className="flex items-center justify-center space-x-1">
         <span className=" text-2xl text-black dark:text-white">Feel free to download my CV </span>
