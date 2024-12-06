@@ -8,6 +8,7 @@ on:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
+  workflow_dispatch:
 permissions:
   contents: read
   pages: write
@@ -30,6 +31,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
+    - name: Setup Pages
+      uses: actions/configure-pages@v5
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v4
       with:
@@ -37,6 +40,8 @@ jobs:
         cache: 'npm'
     - run: npm ci
     - run: npm run build --if-present
+    - name: Upload artifact
+      uses: actions/upload-pages-artifact@v3
 
   # Deployment job
   deploy:
