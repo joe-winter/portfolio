@@ -29,7 +29,7 @@ export default function Home({scrollToProjects, scrollToContact}) {
 
       <div className="mb-8 lg:mb-0 lg:ml-12">
         <img
-          src="https://portfolio-83yx.onrender.com/images/portrait.png"
+          src="images/portrait.png"
           alt="Joe Winter Portrait"
           className="max-w-xs lg:max-w-md rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300"
         />
