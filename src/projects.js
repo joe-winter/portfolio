@@ -1,4 +1,4 @@
-import makersUiGame from './assets/images/MakersUIGame/host-landing.png';
+// import makersUiGame from `${import.meta.env.BASE_URL}assets/images/MakersUIGame/host-landing.png`;
 import acebook from './assets/images/Acebook/home-page.png';
 import battleships from './assets/images/Battleships/battleships.png';
 
@@ -33,7 +33,7 @@ const projects = [
       tailwindIcon,
       viteIcon,
     ],
-    images: makersUiGame,
+    images: `${import.meta.env.BASE_URL}assets/images/MakersUIGame/host-landing.png`,
   },
   {
     id: 2,
