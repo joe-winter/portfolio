@@ -25,7 +25,10 @@ function App() {
         scrollToContact={() => scrolltoRef(contactRef)}
       />
       <section ref={homeRef}>
-        <Home />
+        <Home
+          scrollToProjects={() => scrolltoRef(projectsRef)}
+          scrollToContact={() => scrolltoRef(contactRef)}
+        />
       </section>
       <section ref={aboutRef}>
         <About />
