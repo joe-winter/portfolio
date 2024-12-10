@@ -2,33 +2,40 @@ export default function About() {
   return (
     <section className="flex flex-col items-center justify-center mt-48 lg:mt-96">
       <div className="max-w-3xl text-center">
-        <h1 className="text-4xl font-bold text-gray-800 dark:text-white mb-6">About Me</h1>
+        <h1 className="text-4xl font-bold text-gray-800 dark:text-white mb-6">
+          About Me
+        </h1>
         <p className="text-lg text-gray-700 dark:text-gray-300 mb-4">
-          Hi, I’m Joe Winter, a passionate Software Engineer transitioning from a
-          career in Civil Engineering. With a Master&apos;s degree in Civil
-          Engineering and professional experience designing and analyzing
-          structures, I developed a strong foundation in problem-solving, critical
-          thinking, and teamwork.
+          Hi, I’m Joe Winter, a passionate software engineer transitioning from
+          a background in structural engineering. In 2023, I graduated from the
+          University of Brighton with a master’s degree in civil engineering and
+          worked as a structural engineer. However, I never felt satisfied with
+          my work and knew this wasn’t the right path. During my dissertation, I
+          used MATLAB to analyse large amounts of data and found I enjoyed
+          writing and refactoring my code far more than the engineering aspect
+          of the project. This grew into a passion for programming.
         </p>
         <p className="text-lg text-gray-700 dark:text-gray-300 mb-4">
-          In 2024, I decided to follow my growing interest in technology and
-          completed the rigorous Makers Academy bootcamp, where I honed my skills
-          in full-stack development. Over 12 weeks, I gained hands-on experience
-          with tools and technologies like JavaScript, React, Python, Kotlin,
-          PostgreSQL, and MongoDB, as well as key development practices such as
-          Test-Driven Development (TDD), pair programming, and agile workflows.
+          In June 2024, I decided to make a change. I quit my job and started a
+          bootcamp at Makers Academy. Right away, we began learning fundamental
+          concepts like object-oriented design and test-driven development,
+          which I was immediately drawn to. We also practiced pair programming,
+          often completing challenges with members of the bootcamp we hadn’t
+          spoken to before, which helped build collaboration skills.
         </p>
         <p className="text-lg text-gray-700 dark:text-gray-300 mb-4">
-          At Makers, I discovered a love for creating software that brings people
-          together. From building multiplayer games using Socket.IO to designing
-          responsive and dynamic frontends with React and TailwindCSS, I enjoyed
-          collaborating in teams to tackle complex challenges.
+          During the bootcamp, I participated in creating full-stack
+          applications as part of a team. In one project, we worked with legacy
+          code, understanding, refactoring, and building upon it. In another, we
+          started a project entirely from scratch, where I to learned how to use
+          web sockets so we could implement real time functionality, which
+          became a key feature of the application.
         </p>
         <p className="text-lg text-gray-700 dark:text-gray-300">
-          As a former structural engineer, I bring a unique perspective to
-          software development. My experience creating precise designs and
-          enhancing workflows with custom tools has translated seamlessly into
-          writing clean, efficient, and maintainable code.
+          As a former structural engineer, I hope to bring my practical
+          problem-solving skills and technical ability to software development,
+          combining my analytical background with my passion for creating
+          impactful, fun applications.
         </p>
       </div>
     </section>
