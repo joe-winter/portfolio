@@ -5,7 +5,7 @@ const projects = [
     description:
       "A multiplayer number guessing game with lobbies, round timers, real-time updates and deployed via Render with CI/CD using GitHub Actions.",
     github: "https://github.com/shammy642/MakersUIGame",
-    link: "https://example.com/",
+    // link: "https://example.com/",
     technologies: [
       "/icons/react.svg",
       "/icons/node.svg",
@@ -23,7 +23,7 @@ const projects = [
     description:
       "A Facebook clone with React, Node.js, Express and MongoDB, featuring authentication, dynamic posts, profiles, friends, likes and messages.",
     github: "https://github.com/Alexia-May/acebook-watermelon-club",
-    link: "https://example.com/",
+    // link: "https://example.com/",
     technologies: [
       "/icons/react.svg",
       "/icons/node.svg",
