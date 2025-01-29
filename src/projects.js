@@ -45,6 +45,24 @@ const projects = [
     technologies: ["/icons/python.svg", "/icons/pytest.svg"],
     images: "/images/Battleships/battleships.png",
   },
+  {
+    id: 4,
+    title: "Finance Tracker",
+    description:
+      "A full-stack finance tracker built with TypeScript, React, MongoDB, and Express, featuring user authentication, a signup system, and a dashboard that provides a summary.",
+    github: "https://github.com/joe-winter/finance-tracker",
+    // link: "https://example.com/",
+    technologies: [
+      "icons/typescript.svg",
+      "/icons/react.svg",
+      "/icons/jwt.svg",
+      "/icons/mongodb.svg",
+      "/icons/vitest.svg",
+      "/icons/vite.svg",
+      "/icons/jest.svg",
+    ],
+    images: "images/Finance-Tracker/finance-tracker.png",
+  },
 ];
 
 export default projects;

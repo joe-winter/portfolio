@@ -39,16 +39,16 @@ export default function NavBar({
             <div className="block w-auto">
               <ul className="font-medium flex p-0 flex-row space-x-8 mt-0 bg-gray-50 dark:bg-gray-900 dark:border-gray-700">
                 <li>
-                  <button onClick={scrollToAbout}>
+                  <button onClick={scrollToProjects}>
                     <div className="text-gray-900 hover:text-blue-700 dark:text-white dark:hover:text-blue-500 dark:hover:bg-transparent">
-                      About
+                      Projects
                     </div>
                   </button>
                 </li>
                 <li>
-                  <button onClick={scrollToProjects}>
+                  <button onClick={scrollToAbout}>
                     <div className="text-gray-900 hover:text-blue-700 dark:text-white dark:hover:text-blue-500 dark:hover:bg-transparent">
-                      Projects
+                      About
                     </div>
                   </button>
                 </li>

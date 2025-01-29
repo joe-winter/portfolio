@@ -35,11 +35,11 @@ function App() {
           isOpen={isOpen}
         />
       </section>
-      <section ref={aboutRef}>
-        <About />
-      </section>
       <section ref={projectsRef}>
         <Projects />
+      </section>
+      <section ref={aboutRef}>
+        <About />
       </section>
       <section ref={contactRef}>
         <Contact />
